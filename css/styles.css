@@ -1,0 +1,641 @@
+*{font-family: "Ubuntu", sans-serif;box-sizing: border-box;
+}
+body{background-color: #1b1f24;color: #18181B;width: 100%;margin: 0;}
+html, body{overflow-x: hidden;}
+/*
+#################################################
+################# NAV - BAR #####################
+#################################################
+*/
+
+nav{
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    height: 90px;
+}
+nav .logo img,.contacto footer img{
+    max-width: 100%;
+    height: 70px;
+}
+nav .nav-bar{
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 20px;
+}
+nav .nav-bar li{
+    list-style: none;
+    border: none;
+}
+nav .nav-bar li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 21px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+nav .nav-bar li a:hover{
+    background: linear-gradient(135deg,#f97316,#ef4444);
+    background-position: right center;
+    border-radius: 20px;
+    color: #000000;
+    transform: scale(1.05);
+}
+nav .nav-bar li a.contacto{
+    background: linear-gradient(135deg,#f97316,#ef4444);
+    border-radius: 20px;
+    color: #000000;
+    margin: 0;
+}
+.menu-toggle{
+    display:none;
+    color:white;
+    font-size:35px;
+    cursor:pointer;
+    user-select:none;
+}
+/*
+#################################################
+#################### HOME #######################
+#################################################
+*/
+
+div.home{
+    height: 100vh;
+    display: block;
+    align-content: center;
+    width: 100%;
+    padding: 0 80px;
+}
+div.home .txt-des{
+    width: 70%;
+}
+div.home h2{margin-bottom: 0;}
+div.home p{font-size: 25px;}
+div.home h2,div.home    p{
+    color: white;
+    opacity: 80%;
+}
+div.home h1{
+    color: #ffffff;
+    font-size: 60px;
+    margin: 0px 0px 15px 0px;
+}
+div.home button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg,#f97316,#ef4444);
+    transition: transform 0.5s ease;
+}
+div.home button i{
+    font-size: 25px;
+}
+div.home button:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+div.home button a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/*
+#################################################
+################ INFORMACION ####################
+#################################################
+*/
+
+div.info{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 80px;
+}
+div.info .descripcion h1{
+    color: #ffffff;
+}
+div.info .foto{margin: 0 20px;}
+div.info .foto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+div.info .descripcion{padding:40px;}
+div.info .descripcion h1{font-size: 60px;}
+div.info .descripcion p{font-size: 20px;padding-right: 50px;height: auto;color: #ffffff;}
+div.info .descripcion .botones a{
+    display: inline-block;
+    margin-right: 18px;
+    text-decoration: none;
+    color: #000000;
+    padding: 18px 24px;
+    border-radius: 20px;
+    font-size: medium;
+    front-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+div.info .descripcion .botones a:hover{transform: scale(1.15);}
+div.info .descripcion .botones .contact {
+    background: linear-gradient(135deg,#f97316,#ef4444);
+    color: #ffffff;
+}
+
+/*
+#################################################
+################# PORTAFOLIO ####################
+#################################################
+*/
+div.portafolio{
+    width: 100%;
+    padding: 0 80px;
+}
+
+div.portafolio h1.head{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+div.portafolio ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+div.portafolio ul li{
+    color: #f97316;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+div.portafolio .proyects{
+    display: flex;
+}
+div.portafolio .proyects .text{
+    width: 70%;
+}
+div.portafolio .proyects .img{width: 30%;padding: 0 80px 0 0;}
+div.portafolio .proyects .img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+div.portafolio .proyects .text h1{
+    color: #ef4444;
+    font-weight: lighter;
+    font-size: 50px;
+}
+div.portafolio .proyects .text h2{color: #ffffff;font-size: 40px;}
+div.portafolio .proyects .text p,div.portafolio .proyects .text a{font-size: 25px;color: white;}
+div.portafolio .proyects .text .go{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+div.portafolio .proyects .text .go:hover{
+    transform: scale(1.1);
+    color: #f97316;
+}
+
+/*
+#################################################
+################## SERVICIOS ####################
+#################################################
+*/
+
+.servicios{
+    width: 100%;
+    padding: 0 80px;
+}
+
+.servicios h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.servicios .cont{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 45px;
+}
+.servicios .box{
+    padding: 35px;
+    border: 8px solid transparent;
+    border-image: linear-gradient(135deg,#f97316,#facc15) 1;
+    background: rgba(255,255,255,.02);
+    transition: .35s;
+}
+.servicios .box:hover{
+    transform: tsranslateY(-5px);
+    box-shadow: 0 0 40px rgba(249,115,22,.35), 0 0 45px rgba(249,115,22,.18);
+}
+.servicios .titulo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.servicios .icono{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#f97316,#facc15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.servicios .icono img{
+    width: 35px;
+}
+.servicios h2{
+    color: white;
+    font-size: 25px;
+}
+.servicios p{
+    color: #bdbdbd;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/*
+#################################################
+################ EXPERIENCIA ####################
+#################################################
+*/
+
+.experiencia {width: 100%;padding: 0 80px;}
+.experiencia h1 {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.experiencia .imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+.experiencia .imagenes div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.experiencia .imagenes img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+.experiencia .imagenes h1{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/*
+#################################################
+################## CONTACTO #####################
+#################################################
+*/
+
+.contacto{
+    width: 100%;
+    margin-top: 40px;
+    padding: 1px 80px 50px 80px;
+    border-radius: 130px 130px 0 0;
+    background: linear-gradient(135deg,#f97316,#ef4444);
+    height: auto;
+}
+.contacto h1 {color: #ffffff;text-align: center;text-transform: uppercase;font-size: 50px;}
+.contacto .container {display: flex;padding: 0 100px;}
+.contacto .container #texto{width: 60%;padding-right: 200px;}
+.contacto .container #texto h2,.contacto .container #texto p {color: #ffffff;}
+.contacto .container #texto h2 {font-size: 30px;}
+.contacto .container #texto p {font-size: 18px;}
+.contacto .container #texto .concon {display: flex;flex-direction: column;}
+.contacto .container #texto .concon div {display: flex;margin: 10px 0;align-items: center;gap: 20px;}
+.contacto .container #texto .concon img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    background: linear-gradient(135deg,#ef4444,#f97316);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+.contacto .container #formulario{width: 40%;}
+.contacto .container #formulario form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 45px;
+    border-radius: 40px;
+    background: linear-gradient(135deg,#ef4444,#f97316);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+.contacto .container #formulario form input, textarea{
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #1b1f24;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.contacto .container #formulario form .mensaje{height: 200px;text-align: initial;}
+.contacto .container #formulario form input::placeholder, textarea::placeholder{opacity: 0.5;color: #ffffff;}
+.contacto .container #formulario form button{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 40%;
+    background-color: #1b1f24;
+    margin: 5px 0;
+    color: #ffffff;
+}
+.contacto .linea{
+    background-color: #ffffff;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+}
+.contacto footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.contacto footer .texto{text-align: center;width: 50%;flex: 1;}
+.contacto footer .texto p{text-indent: 0;line-height: 1;text-align: center;margin: 5px;}
+
+/* ============================
+=============TABLETS===========
+============================ */
+
+@media (max-width: 992px){
+
+    nav{
+        padding: 0 30px;
+    }
+    .home,
+    .info,
+    .portafolio,
+    .servicios,
+    .experiencia,
+    .contacto{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+/* ================================
+============= CELULARES ===========
+================================ */
+@media (max-width:768px){
+    /* NAV */
+    nav{
+        padding:20px;
+        justify-content:space-between;
+        height:90px;
+        z-index: 9999;
+    }
+    .menu-toggle{
+        display:block;
+    }
+    nav .nav-bar{
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:#1b1f24;
+        flex-direction:column;
+        align-items:center;
+        gap:0;
+        max-height:0;
+        overflow:hidden;
+        transition:max-height .4s ease;
+    }
+    nav .nav-bar.active{
+        max-height:500px;
+    }
+    .nav-bar li{
+        width:100%;
+        text-align:center;
+    }
+    .nav-bar li a{
+        width:100%;
+        padding:20px;
+    }
+    /* HOME */
+    .home{
+        padding-top: 150px;
+        height: auto;
+    }
+    .home .txt-des{
+        width:100%;
+        text-align:center;
+    }
+    .home h1{
+        font-size:10px;
+    }
+    .home p{
+        font-size:18px;
+    }
+    /* ACERCA DE MI */
+    .info{
+        flex-direction:column;
+        height:auto;
+        text-align:center;
+    }
+    div.info .descripcion{
+        padding:20px 0;
+    }
+    div.info .descripcion p{
+        padding:0;
+    }
+    /* PORTAFOLIO */
+    div.portafolio .proyects{
+        flex-direction:column;
+    }
+    div.portafolio .proyects .text,
+    div.portafolio .proyects .img{
+        width:100%;
+    }
+    div.portafolio .proyects .text p{
+        font-size: 18px;
+    }
+    .portafolio .proyects .img{
+        padding:20px 0;
+    }
+    /* SERVICIOS */
+    .servicios .cont{
+        grid-template-columns:1fr;
+    }
+    /* EXPERIENCIA */
+    .experiencia .imagenes{
+        grid-template-columns:repeat(2,1fr);
+    }
+    /* CONTACTO */
+    .contacto .container{
+        flex-direction:column;
+        padding:0;
+    }
+    .contacto .container #formulario form button{
+        width: 100%;
+    }
+
+    .contacto .container #texto,
+    .contacto .container #formulario{
+        width:100%;
+        padding:0;
+    }
+    .contacto .container #texto p{
+        font-size: 15px;
+    }
+    div.contacto div.container div#texto h2{
+        font-size: 30px;
+    }
+    .contacto footer{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+@media (max-width:480px){
+    div.home h1{
+        font-size:30px;
+    }
+    div.home p{
+        font-size: 17px;
+        margin: 17px;
+    }
+    div.home{
+        height: auto;
+        padding: 100px 5px 100px 5px;
+    }
+    div.home .txt-des{
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    div.info .descripcion h1,
+    div.portafolio h1.head,
+    div.servicios h1,
+    div.experiencia h1,
+    div.contacto h1{
+        font-size:30px;
+    }
+    .experiencia .imagenes{
+        grid-template-columns:1fr;
+    }
+    .servicios .box{
+        padding:20px;
+    }
+    .contacto{
+        border-radius:50px 50px 0 0;
+    }
+    div.info{height: auto; padding: 50px 10px;}
+    div.info .descripcion{
+        padding:  0 5px;
+
+    }
+    div.info .descripcion p{padding: 0; text-align: center;}
+    div.info .descripcion .botones a{
+        margin: 15px;
+    }
+    div.portafolio {
+        padding: 50px 10px;
+    }
+    div.portafolio div.proyects .text{width: 100%;}
+    div.portafolio div.proyects .text h1{font-size: 30px;}
+    div.portafolio div.proyects .text h2{font-size: 25px;}
+    div.portafolio div.proyects .text p, div.portafolio div.proyects .text h1, div.portafolio div.proyects .text h2{margin: 25px 15px;}
+    div.portafolio div.proyects .text a{margin-left: 15px;}
+    div.portafolio div.proyects .img{padding: 0;width: 100%;margin-top: 40px;}
+}
+
+/* ================================
+============= VALIDACION ==========
+================================ */
+
+#contactForm input,#contactForm textarea{border:2px solid transparent;transition:.3s;}
+.error-input{border:2px solid #ef4444 !important;}
+.correcto{border:2px solid #22c55e !important;}
+.error{
+    display:block;
+    color:white;
+    font-size:14px;
+    margin:4px 0 12px;
+    font-weight: bolder;
+}
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 99999;
+}
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content{
+    width: 90%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    background: #1b1f24;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+}
+.modal-content i{
+    font-size: 70px;
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+.modal-content h2{margin-bottom: 10px;}
+.modal-content p{color: #cfcfcf;}
+.modal-content button{
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(135deg,#f97316,#ef4444);
+}
